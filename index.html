@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:weixin="http://www.w3.org/1999/xhtml">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!--animated css-->
+    <link rel="stylesheet" href="animate.css">
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="mainCSS.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+    <title>Portfolio webPage</title>
+</head>
+<body>
+    <header>
+        <nav id="nav" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header col-md-offset-2 col-sm-offset-1">
+                        <button  id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#my-navbar-collapse">
+                            <span class="sr-only">toggle navbar</span>
+                            <sapn class="icon-bar"></sapn>
+                            <sapn class="icon-bar"></sapn>
+                            <sapn class="icon-bar"></sapn>
+                         </button>
+                        <span id="logo" class="navbar-brand"  rel="popover">eMe</span>
+
+                    </div>
+                    <div id="my-navbar-collapse" class="col-md-offset-6 col-sm-offset-4 collapse navbar-collapse">
+                    <ul id="navTeb" class="nav nav-pills">
+                        <li class="nav-item active"><a class="nav-link" href="#">ABOUT</a></li>
+                        <li class="nav-item "><a href="#myPortfolio" >PORTFOLIO</a></li>
+                        <li class="nav-item"><a href="#contentMe" >CONTACT</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="self" class="col-md-8 col-md-offset-2 col-xs-12 jumbotron">
+                    <div id="self-img">
+                    <div id="selfIntru" class="col-md-8 col-xs-12 ">
+                        <p>Front-End Developer , In the learning stage; A fresh graduates at 2018,and just job-hunting
+                        <br>应届毕业生 ，正在寻找web前端开发工作岗位 ,享受代码的魅力，上进随和
+                        </p>
+                    <div class="row">
+                        <div  class="myCanvasDiv col-md-12 col-md-offset-1 col-xs-12 ">
+                            <canvas id="myCanvas3"   width="800px" height="40px"></canvas>
+                        </div>
+                    <!--<div class="col-md-2" id="myIcon"><span > << </span></div>-->
+                    </div>
+                    <p id="selfSummary">Web Developer - Fresh Graduates - Job Hunting</p>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12">
+                        <img class="img-responsive img-circle center-block" src="picture/me3.png">
+                    </div>
+                    </div>
+
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="myPortfolio" class="col-md-8 col-md-offset-2 col-xs-12 jumbotron">
+                    <section id="myProjects">
+                    <header >
+                        <h2  class="text-center portfolio-header">PORTFOLIO</h2>
+                       <div class="myCanvasDiv col-md-10 col-md-offset-1 col-xs-12">
+                           <canvas id="myCanvas"   width="800px" height="40px"></canvas>
+                       </div>
+                    </header>
+                    <div id="someProjects " class="row">
+                        <div class="col-md-6">
+                            <a href="https://codepen.io/eMe-404/pen/GvbeXz" class="thumbnail">
+                                <img src="picture/pro1.PNG" alt=" a tribute page...">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="thumbnail">
+                                <img src="picture/pro1.PNG" alt=" school work ...">
+                            </a>
+                        </div>
+                        <div class="col-md-6 ">
+                            <a href="#" class="thumbnail">
+                                <img src="picture/pro0.PNG" alt="working on more projects...">
+                            </a>
+                        </div>
+                        <div class="col-md-6 ">
+                            <a href="#" class="thumbnail">
+                                <img src="picture/pro0.PNG" alt="working on more projects...">
+                            </a>
+                        </div>
+                        <div class="col-md-6 ">
+                            <a href="#" class="thumbnail">
+                                <img src="picture/pro0.PNG" alt="working on more projects...">
+                            </a>
+                        </div>
+                        <div class="col-md-6 ">
+                            <a href="#" class="thumbnail">
+                                <img src="picture/pro0.PNG" alt="working on more projects...">
+                            </a>
+                        </div>
+                    </div>
+                    </section>
+
+                    <hr class="myHr">
+
+                    <section>
+                            <header id="contentMe">
+                                <h2  class="text-center portfolio-header">CONTACT</h2>
+                                <div  class="myCanvasDiv col-md-10 col-md-offset-1 col-xs-12">
+                                    <canvas id="myCanvas2"   width="800px" height="40px"></canvas>
+                                </div>
+                            </header>
+                            <div class="row">
+                                <section class="col-md-6 col-xs-12">
+                                    <form action="" method="post">
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-addon mySpan">名称
+                                                <span class="fa fa-user" aria-hidden="true"></span>
+                                            </span>
+                                            <input type="text" class="form-control myInput" placeholder="Username" aria-describedby="sizing-addon1" required>
+                                        </div>
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-addon mySpan">邮箱
+                                            <span class="fa fa-envelope" aria-hidden="true"></span>
+                                            </span>
+                                            <input type="email" class="form-control myInput" placeholder="Email" aria-describedby="sizing-addon1" required>
+                                        </div>
+                                        <textarea id="myTextArea" class="form-control" rows="4" placeholder="Context"></textarea>
+                                    </form>
+                                </section>
+                                <section class="col-md-6 col-xs-12">
+                                    <p id="myContactWord">
+                                        Want to get in touch with me? Be it to request more info about myself or my experience just email me :)
+                                        <br>
+                                    I   promise to reply A.S.A.P.
+                                    </p>
+                                    <button id="myButton" class="btn btn-block" type="submit">
+                                        Send
+                                        <span class="fa fa-send"></span>
+                                    </button>
+                                </section>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer >
+        <div>
+            <div class="row" id="footer-top">
+                <div  class="col-md-6 col-xs-12">
+                    <h3 class="text-center" >ABOUT THIS PAGE</h3>
+                    <p>made with
+                        <i class="fa fa-html5 fa-fw fa-2x" aria-hidden="true" title="HTML5"></i>
+                        <i class="fa fa-css3 fa-fw fa-2x" aria-hidden="true" title="CSS3"></i>
+                        <i class="fa fa-bold fa-fw fa-2x" aria-hidden="true" title="BOOTSTRAP"></i>
+                    <br>by <a rel="#"> Denny </a> </p>
+                </div>
+                <div class="col-md-6 col-xs-12 footerInfo">
+                    <h3 class="text-center">AROUND THE WEB</h3>
+                    <ul >
+                        <li><a href="https://github.com/eMe-404"  class="webButton social" title="Github"><i class="fa fa-github fa-2x"></i> </a> </li>
+                        <li><a href="https://www.freecodecamp.org/eme-404" class="webButton social" title="FreeCodeCamp"><i class="fa fa-free-code-camp fa-2x"></i> </a> </li>
+                        <li><a href="weixin://contacts/profile/838702939"  class="webButton social" title="WeChat"><i class="fa fa-wechat fa-2x"></i> </a> </li>
+                        <li><a href="#"  class="webButton social" title="QQ"><i class="fa fa-qq fa-2x"></i> </a> </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-bottom" class="row" >
+                <ul class="list-inline text-center">
+                    <li>
+                        <span id="bottomLogo">eMe</span> © <script>document.write(new Date().getFullYear())</script>. All Rights Reversed
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a id="scrollUp" class="button scrollable" href="#self"><i class="fa fa-chevron-up"></i></a>
+    <!--main javascript-->
+    <script src="manJS.js"></script>
+</body>
+</html>

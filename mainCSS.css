@@ -1,0 +1,307 @@
+body{
+    background-color: #1b6d85;
+
+    /*margin:0 auto;*/
+}
+
+/* ********   navBar style     ***********/
+#nav{
+     padding:13px;
+    box-shadow: 16px 1px 20px 0px rgba(252, 247, 247, 0.59);
+
+}
+.container-fluid{
+    max-width:1920px;
+}
+
+#logo{
+    color:red;
+    font-family: "Bauhaus 93";
+    font-size: 46px;
+    font-style: italic;
+    animation:myLogo 6s infinite,flip 6s infinite;
+
+}
+@keyframes myLogo {
+
+    0%{
+        color: red;
+    }
+    50%{
+        color:white;
+    }
+    100%{
+        color: red;
+    }
+}
+#logo:hover,#logo:focus{
+    animation-name: jello;
+    animation-iteration-count: 3;
+}
+
+.popover{
+    background-color: red;
+    color: black;
+}
+
+#navTeb{
+    font-size: 23px;
+    font-family: fantasy, 华文琥珀;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+    color: #23527c;
+    background-color: #EEEEEE;
+}
+.nav-pills>li>a{
+    border-radius: 30px;
+    padding: 3px 20px;
+}
+#collapseButton:hover{
+    background-color: red;
+}
+#collapseButton{
+    border-color: red;
+}
+a{
+    color: #2b87d7;
+}
+
+
+/* ********   self introduction & self images section style     ***********/
+.jumbotron{
+    margin-bottom: 0px;
+}
+#self{
+    background-color: #02282a;
+    margin-top: -20px;
+    color: #2b87d7;
+    box-shadow: 15px 13px 11px 0px rgba(0, 0, 0, 0.72);
+    font-family: fantasy, 华文琥珀;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#self-img{
+    margin-top: 66px;
+}
+
+#selfIntru{
+    margin-top: 60px;
+    text-align: center;
+    text-shadow: 5px 5px 5px #a12b1c;
+    text-align: center;
+}
+.myHr{
+
+    margin-left: -62px;
+    margin-right: -61px;
+
+    background-color: #1b6d85;
+    height: 1px;
+    border: none;
+
+}
+#myIcon{
+    color: white;
+    font-size: 30px;
+    animation-name: myIcon;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes myIcon{
+
+    25%{
+        color: #2b87d7;
+        transform: rotate(45deg);
+    }
+    50%{
+        color: red;
+        transform: rotate(0deg);
+    }
+    75%{
+        color: #2b87d7;
+        transform: rotate(-45deg);
+    }
+    100%{
+        color: white;
+        transform: rotate(0deg);
+    }
+
+
+}
+@keyframes myIconn{
+
+    50%{
+        color: red;
+    }
+
+}
+#selfSummary{
+    padding-top: 33px;
+    font-size: x-large;
+    font-family:Algerian;
+}
+
+
+/**************  portfolio style **********************/
+
+#myPortfolio{
+    background-color: #559b9a;
+    box-shadow: 0px -3px 13px 0px rgba(252, 247, 247, 0.56)
+}
+
+#myCanvas{
+    width:100%;
+    height: 40px;
+}
+#myCanvas2{
+    width:100%;
+    height: 40px;
+}
+
+
+.portfolio-header{
+    font-size: 40px;
+     color: #02282a;
+    font-family: fantasy, 华文琥珀;
+    padding-bottom: 20px;
+
+}
+
+/********************* contact me style********************/
+#contentMe{
+    padding-top: 30px;
+}
+/*      the canvas of    -----------</>------------                 */
+#myCanvas3{
+    width:100%;
+    height: 40px;
+    align-items:center;
+    padding-top: 7px;
+}
+
+
+.mySpan{
+    background-color: black;
+    border: none;
+    color: red;
+    font-family: fantasy, 华文琥珀;
+}
+
+.myInput{
+    background-color: #1b6d85;
+    border: none;
+    color: red;
+    height: 60px;
+}
+
+.input-group{
+    padding-top: 35px;
+}
+#myTextArea{
+    margin-top: 35px;
+    background-color: #1b6d85;
+    border:none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: red;
+    font-family:fantasy, 华文琥珀;
+    resize: vertical;
+
+}
+
+#myContactWord{
+    padding-top: 33px;
+    font-size: x-large;
+    font-family:Algerian;
+    color: black;
+    text-align: right;
+}
+#myButton{
+    font-size: 18px;
+    background-color: #1b6d85;
+    color: red;
+    font-family: fantasy, 华文琥珀;
+    margin-top: 77px;
+}
+
+/********************    myFooter   *****************************/
+#footer-top{
+    background-color: #86cdcc;
+    color: black;
+    font-family: fantasy;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+}
+#footer-bottom{
+    height: 20%;
+    background-color: black;
+    color: red;
+
+}
+.webButton{
+
+    color:black;
+    border:solid 2px black;
+    border-radius:50%;
+    display:inline-block;
+    width: 60px;
+    height:60px;
+    text-align:center;
+    font-size:20px;
+    line-height: 70px;
+}
+.webButton:hover{
+    border: solid 2px #f00;
+    color: #1B6D85;
+    background: #f00;
+}
+.footerInfo>ul>li{
+    /*float: left;*/
+
+    list-style: none;
+    padding-left: 10px;
+
+}
+.footerInfo>ul{
+    display: inline-flex;
+    margin-left: -55px;
+
+}
+
+#bottomLogo{
+    color:red;
+    font-family: "Bauhaus 93";
+    font-size: 26px;
+    font-style: italic;
+    animation:myLogo 6s infinite;
+
+}
+
+#scrollUp {
+    background-color: #02282a;
+    color: red;
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden;
+    width: 46px;
+    height: 46px;
+    border: none;
+    opacity: .8;
+    position: fixed;
+    z-index: 666;
+    display: block;
+}
+#scrollUp:hover{
+    background-color: white;
+}
