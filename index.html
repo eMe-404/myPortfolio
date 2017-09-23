@@ -5,9 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--bootstrap-->
+    <!--bootstrap&Jquery-->
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <script src="jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+    <script src="jquery.scrollTo.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <!--animated css-->
     <link rel="stylesheet" href="animate.css">
@@ -34,11 +35,11 @@
                         <span id="logo" class="navbar-brand"  rel="popover">eMe</span>
 
                     </div>
-                    <div id="my-navbar-collapse" class="col-md-offset-6 col-sm-offset-4 collapse navbar-collapse">
+                    <div id="my-navbar-collapse" class="col-md-offset-7 col-sm-offset-5 collapse navbar-collapse">
                     <ul id="navTeb" class="nav nav-pills">
-                        <li class="nav-item active"><a class="nav-link" href="#">ABOUT</a></li>
-                        <li class="nav-item "><a href="#myPortfolio" >PORTFOLIO</a></li>
-                        <li class="nav-item"><a href="#contentMe" >CONTACT</a></li>
+                        <li class="nav-item active"><a id="nav-link-1" class="nav-link" href="#">ABOUT</a></li>
+                        <li class="nav-item "><a id="nav-link-2" href="#" >PORTFOLIO</a></li>
+                        <li class="nav-item"><a id="nav-link-3" href="#" >CONTACT</a></li>
                     </ul>
                     </div>
                 </div>
@@ -50,26 +51,26 @@
             <div class="row">
                 <div id="self" class="col-md-8 col-md-offset-2 col-xs-12 jumbotron">
                     <div id="self-img">
-                    <div id="selfIntru" class="col-md-8 col-xs-12 ">
+                        <div id="selfIntru" class="col-md-8 col-sm-6 col-xs-12 ">
                         <p>Front-End Developer , In the learning stage; A fresh graduates at 2018,and just job-hunting
-                        <br>应届毕业生 ，正在寻找web前端开发工作岗位 ,享受代码的魅力，上进随和
+                            <br>应届毕业生 ，正在寻找web前端开发工作岗位 ,享受代码的魅力，上进随和
                         </p>
-                    <div class="row">
-                        <div  class="myCanvasDiv col-md-12 col-md-offset-1 col-xs-12 ">
-                            <canvas id="myCanvas3"   width="800px" height="40px"></canvas>
-                        </div>
-                    <!--<div class="col-md-2" id="myIcon"><span > << </span></div>-->
-                    </div>
-                    <p id="selfSummary">Web Developer - Fresh Graduates - Job Hunting</p>
+                        <!--<div class="row">
+                            <div  class="myCanvasDiv col-md-12 col-sm-12 col-xs-12 col-md-offset-1">
+                                <canvas id="myCanvas1"  height="40px"></canvas>
+                            </div> //无法解决canvas自适应窗口变化自动正确的重画，暂时留到以后解决用<hr>暂时代替此功能-->
+                        <!--<div class="col-md-2" id="myIcon"><span > << </span></div> //分界线附加小动图，弃用
+                </div>-->
+                        <hr class="col-md-12 HR">        <!--用此hr来暂时代替上面的canvas画布的分界线功能-->
+                        <p id="selfSummary col-md-12">Web Developer - Fresh Graduates - Job Hunting</p>
                     </div>
 
-                    <div class="col-md-4 col-xs-12">
-                        <img class="img-responsive img-circle center-block" src="picture/me3.png">
-                    </div>
+                        <div class="col-md-4 col-sm-6" id="myFlex">
+                            <img id="myImage" class="img-responsive img-circle center-block" src="picture/me3.png">
+                        </div>
                     </div>
 
                     <div>
-
                     </div>
                 </div>
             </div>
@@ -82,11 +83,12 @@
                     <section id="myProjects">
                     <header >
                         <h2  class="text-center portfolio-header">PORTFOLIO</h2>
-                       <div class="myCanvasDiv col-md-10 col-md-offset-1 col-xs-12">
-                           <canvas id="myCanvas"   width="800px" height="40px"></canvas>
-                       </div>
+                       <!--<div class="myCanvasDiv col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-1">
+                           <canvas id="myCanvas2"   width="800px" height="40px"></canvas>
+                       </div>   //弃用原因跟上面的myCanvas1相同-->
+                        <hr class="col-md-12 HR">        <!--用此hr来暂时代替上面的canvas画布的分界线功能-->
                     </header>
-                    <div id="someProjects " class="row">
+                    <div  class="row">
                         <div class="col-md-6">
                             <a href="https://codepen.io/eMe-404/pen/GvbeXz" class="thumbnail">
                                 <img src="picture/pro1.PNG" alt=" a tribute page...">
@@ -125,9 +127,10 @@
                     <section>
                             <header id="contentMe">
                                 <h2  class="text-center portfolio-header">CONTACT</h2>
-                                <div  class="myCanvasDiv col-md-10 col-md-offset-1 col-xs-12">
-                                    <canvas id="myCanvas2"   width="800px" height="40px"></canvas>
-                                </div>
+                                <!--<div  class="myCanvasDiv col-md-10 col-md-offset-1 col-xs-12">
+                                    <canvas id="myCanvas3"   width="800px" height="40px"></canvas>
+                                </div>             //弃用原因跟上面的的canvas一样-->
+                                <hr class="col-md-12 HR">        <!--用此hr来暂时代替上面的canvas画布的分界线功能-->
                             </header>
                             <div class="row">
                                 <section class="col-md-6 col-xs-12">
@@ -145,6 +148,10 @@
                                             <input type="email" class="form-control myInput" placeholder="Email" aria-describedby="sizing-addon1" required>
                                         </div>
                                         <textarea id="myTextArea" class="form-control" rows="4" placeholder="Context"></textarea>
+                                        <button id="myButton" class="btn btn-block" type="submit">
+                                            Send
+                                            <span class="fa fa-send"></span>
+                                        </button>
                                     </form>
                                 </section>
                                 <section class="col-md-6 col-xs-12">
@@ -153,10 +160,7 @@
                                         <br>
                                     I   promise to reply A.S.A.P.
                                     </p>
-                                    <button id="myButton" class="btn btn-block" type="submit">
-                                        Send
-                                        <span class="fa fa-send"></span>
-                                    </button>
+
                                 </section>
                             </div>
                     </section>
@@ -169,7 +173,7 @@
             <div class="row" id="footer-top">
                 <div  class="col-md-6 col-xs-12">
                     <h3 class="text-center" >ABOUT THIS PAGE</h3>
-                    <p>made with
+                    <p> made with
                         <i class="fa fa-html5 fa-fw fa-2x" aria-hidden="true" title="HTML5"></i>
                         <i class="fa fa-css3 fa-fw fa-2x" aria-hidden="true" title="CSS3"></i>
                         <i class="fa fa-bold fa-fw fa-2x" aria-hidden="true" title="BOOTSTRAP"></i>
@@ -195,7 +199,7 @@
             </div>
         </div>
     </footer>
-    <a id="scrollUp" class="button scrollable" href="#self"><i class="fa fa-chevron-up"></i></a>
+    <!-- <a id="scrollUp" class="button scrollable" href="#self"><i class="fa fa-chevron-up"></i></a> -->
     <!--main javascript-->
     <script src="manJS.js"></script>
 </body>

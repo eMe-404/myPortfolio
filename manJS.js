@@ -19,8 +19,7 @@ $('#logo').popover(
 
     title:"Welcome to my page",//设置 弹出框 的标题
     html: true, // 为true的话，data-content里就能放html代码了
-    content:"written by eMe-404 <br>" +
-    "(ps:click logo to run or stop animation)",//这里可以直接写字符串，也可以 是一个函数，该函数返回一个字符串；
+    content:"written by eMe-404",//这里可以直接写字符串，也可以 是一个函数，该函数返回一个字符串；
     placement:'bottom'
 });
 /*********************** 添加选中状态   ********************************/
@@ -31,19 +30,40 @@ $("#navTeb li").click(function() {
     $(this).addClass('active');                            // 添加当前元素的样式
 
 });
+
+$("#nav-link-1").click(function () {
+    $.scrollTo("#self",500);
+});
+$("#nav-link-2").click(function () {
+    $.scrollTo("#myPortfolio",1000);
+});
+$("#nav-link-3").click(function () {
+    $.scrollTo("#contentMe",1500);
+});
+
+
 /**************     myCanvas script      *********************/
-drawLine("myCanvas","black");
+/*var forCanvas = document.getElementById("myCanvas1");
+var myWidth = forCanvas.parentNode.offsetWidth;
+forCanvas.setAttribute("width","myWidth");*/
+/*
+
+drawLine("myCanvas1","#2b87d7");
 drawLine("myCanvas2","black");
-drawLine("myCanvas3","#2b87d7");
+drawLine("myCanvas3","black");
+
+
 function drawLine(a,color) {
     var myCanvas = $("#"+a);    //stored myCanvas for avoiding the Duplicate Jquery Selector Warning
     var c=document.getElementById(a);
     var ctx=c.getContext("2d");
-    var w = myCanvas.width();
+    var w = myCanvas.parent().width()/2-10;
+    myCanvas.attr("width","'"+w+"'");
+
     var h = myCanvas.height();
 
     ctx.beginPath();
-    var gradient=ctx.createLinearGradient(10,h/2,w/2-100,h/2);
+   var gradient=ctx.createLinearGradient(10,h/2,w,h/2);
     gradient.addColorStop("0","#1b6d85");
     gradient.addColorStop("0.5","red");
     gradient.addColorStop("1.0",color);
@@ -51,7 +71,7 @@ function drawLine(a,color) {
     ctx.lineCap = 'round';
     ctx.strokeStyle = gradient;
     ctx.moveTo(10,h/2);
-    ctx.lineTo(w/2,h/2);
+    ctx.lineTo(w-10,h/2);
     ctx.stroke();
     ctx.closePath();
 
@@ -73,8 +93,11 @@ function drawLine(a,color) {
     ctx.lineTo(w+65,h/2);
     ctx.stroke();
     ctx.closePath();
-    
+
 }
+
+*/
+
 
 $(function() {$('body').on('click', 'a.scrollable', function(event) {
     var $anchor = $(this);
