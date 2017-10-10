@@ -62,6 +62,7 @@ body{
 .nav-pills>li>a{
     border-radius: 30px;
     padding: 3px 20px;
+    margin-top: 5px;
 }
 #collapseButton:hover{
     background-color: red;
@@ -332,4 +333,17 @@ footer{
 }
 #scrollUp:hover{
     background-color: white;
+}
+
+
+/* for mobile screen*/
+@media all and (max-width: 500px){
+
+    .nav-item{
+        font-size: 15px;
+    }
+    #navTeb{
+        text-align: center;
+    }
+
 }
